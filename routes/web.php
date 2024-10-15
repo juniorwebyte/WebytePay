@@ -16,7 +16,11 @@
  * proibido e poderá resultar em ações legais.
  */
 
-use App\Plugins\WebytePay\Controllers\WebytePayController;
+ use App\Http\Controllers\WebytePayController;
 
-Route::post('/webytepay/initiate', [WebytePayController::class, 'initiatePayment']);
-Route::get('/webytepay/status', [WebytePayController::class, 'checkStatus']);
+ // Rota para criar transação
+ Route::post('/webytepay/transaction', [WebytePayController::class, 'createTransaction'])->middleware('auth');
+ 
+ // Rota para listar transações do usuário
+ Route::get('/webytepay/transactions', [WebytePayController::class, 'getUserTransactions'])->middleware('auth');
+ 
