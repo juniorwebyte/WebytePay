@@ -16,8 +16,6 @@
  * proibido e poderá resultar em ações legais.
  */
 
- <?php
-
 return [
     'subject' => 'Confirmação de Pagamento',
     'body' => 'Seu pagamento foi processado com sucesso!',

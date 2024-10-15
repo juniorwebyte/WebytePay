@@ -16,8 +16,6 @@
  * proibido e poderá resultar em ações legais.
  */
 
- <?php
-
 use App\Plugins\WebytePay\WebytePayServiceProvider;
 
 // Registrar o WebytePay

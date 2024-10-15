@@ -16,8 +16,6 @@
  * proibido e poderá resultar em ações legais.
  */
 
- <?php
-
 return [
     'pix' => [
         'api_key' => env('PIX_API_KEY'),

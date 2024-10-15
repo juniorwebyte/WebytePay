@@ -16,8 +16,6 @@
  * proibido e poderá resultar em ações legais.
  */
 
- <?php
-
 return [
     'payment_success' => 'Pagamento realizado com sucesso!',
     'payment_failed' => 'Falha no pagamento. Tente novamente.',

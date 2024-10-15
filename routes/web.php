@@ -16,8 +16,6 @@
  * proibido e poderá resultar em ações legais.
  */
 
- <?php
-
 use App\Plugins\WebytePay\Controllers\WebytePayController;
 
 Route::post('/webytepay/initiate', [WebytePayController::class, 'initiatePayment']);

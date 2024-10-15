@@ -16,8 +16,6 @@
  * proibido e poderá resultar em ações legais.
  */
 
- <?php
-
 namespace App\Plugins\WebytePay;
 
 use Illuminate\Support\ServiceProvider;
