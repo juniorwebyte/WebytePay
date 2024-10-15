@@ -16,8 +16,11 @@
  * proibido e poderá resultar em ações legais.
  */
 
-return [
-    'payment_success' => 'Pagamento realizado com sucesso!',
-    'payment_failed' => 'Falha no pagamento. Tente novamente.',
+ return [
+    'payment_success' => 'Pagamento realizado com sucesso! Obrigado por usar nossos serviços.',
+    'payment_failed' => 'Falha no pagamento. Tente novamente ou entre em contato com o suporte.',
+    'payment_pending' => 'Seu pagamento está pendente. Você será notificado quando for processado.',
+    'transaction_details' => 'Detalhes da transação: ID #:transaction_id, Valor: :amount.',
     // Adicione outras mensagens conforme necessário
 ];
+

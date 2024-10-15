@@ -16,18 +16,24 @@
  * proibido e poderá resultar em ações legais.
  */
 
-return [
-    'pix' => [
-        'api_key' => env('PIX_API_KEY'),
-        'api_secret' => env('PIX_API_SECRET'),
-    ],
-    'boleto' => [
-        'api_key' => env('BOLETO_API_KEY'),
-        'api_secret' => env('BOLETO_API_SECRET'),
-    ],
-    'cartao' => [
-        'api_key' => env('CARTAO_API_KEY'),
-        'api_secret' => env('CARTAO_API_SECRET'),
+ return [
+    'payment_methods' => [
+        'pix' => [
+            'api_key' => env('PIX_API_KEY'),
+            'api_secret' => env('PIX_API_SECRET'),
+            'api_url' => env('PIX_API_URL', 'https://api.pix.com'),
+        ],
+        'boleto' => [
+            'api_key' => env('BOLETO_API_KEY'),
+            'api_secret' => env('BOLETO_API_SECRET'),
+            'api_url' => env('BOLETO_API_URL', 'https://api.boleto.com'),
+        ],
+        'cartao' => [
+            'api_key' => env('CARTAO_API_KEY'),
+            'api_secret' => env('CARTAO_API_SECRET'),
+            'api_url' => env('CARTAO_API_URL', 'https://api.cartao.com'),
+        ],
     ],
 ];
+
 

@@ -17,10 +17,18 @@
  */
 
  use App\Http\Controllers\WebytePayController;
+ use Illuminate\Support\Facades\Route;
 
- // Rota para criar transação
- Route::post('/webytepay/transaction', [WebytePayController::class, 'createTransaction'])->middleware('auth');
- 
- // Rota para listar transações do usuário
- Route::get('/webytepay/transactions', [WebytePayController::class, 'getUserTransactions'])->middleware('auth');
+// Agrupar rotas do WebytePay
+Route::prefix('webytepay')->middleware('auth')->group(function () {
+    // Rota para criar transação
+    Route::post('/transaction', [WebytePayController::class, 'createTransaction']);
+    
+    // Rota para listar transações do usuário
+    Route::get('/transactions', [WebytePayController::class, 'getUserTransactions']);
+    
+    // Rota para webhook (caso necessário)
+    // Route::post('/webhook', [WebytePayController::class, 'handleWebhook']);
+});
+
  

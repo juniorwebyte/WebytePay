@@ -8,13 +8,24 @@
 </head>
 <body>
     <h1>Formulário de Pagamento</h1>
+
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+
     <form action="/webytepay/initiate" method="POST">
         @csrf
         <label for="amount">Valor:</label>
-        <input type="text" name="amount" id="amount" required>
+        <input type="number" name="amount" id="amount" placeholder="0.00" step="0.01" required aria-label="Valor do pagamento">
         
         <label for="payment_method">Método de Pagamento:</label>
-        <select name="payment_method" id="payment_method" required>
+        <select name="payment_method" id="payment_method" required aria-label="Método de pagamento">
             <option value="pix">PIX</option>
             <option value="boleto">Boleto</option>
             <option value="cartao">Cartão</option>

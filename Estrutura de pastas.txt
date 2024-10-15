@@ -9,11 +9,13 @@
 │       ├── mail.php
 │       └── sms.php
 ├── migrations/
-│   ├── 2024_10_15_000000_create_transactions_table.php    // Nova migração para a tabela de transações
-│   └── 2024_10_15_000001_add_payment_info_to_products_table.php // Nova migração para adicionar campos na tabela de produtos
+│   ├── 2024_10_15_000000_create_transactions_table.php
+│   └── 2024_10_15_000001_add_payment_info_to_products_table.php
 ├── routes/
 │   └── web.php
 ├── views/
 │   └── payment-form.blade.php
 ├── WebytePayServiceProvider.php
+├── composer.json
+├── conposer.lock
 └── install.php
