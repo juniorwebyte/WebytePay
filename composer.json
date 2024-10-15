@@ -1,0 +1,17 @@
+{
+    "name": "webyte/webytepay",
+    "description": "Gateway de pagamento para a aplicação Vendi Aqui.",
+    "type": "library",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "WeByte\\WeBytePay\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.4|^8.0",
+        "laravel/framework": "^8.0|^9.0"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
