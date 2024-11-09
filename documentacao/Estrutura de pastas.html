@@ -36,16 +36,17 @@
     </style>
 </head>
 <body>
-    <h1>Estrutura de Pastas do WebytePay</h1>
-    <div class="folder-structure">
-<code>
+
+<h1>Estrutura de Pastas do WebytePay</h1>
+<div class="folder-structure">
+<pre>
 <span class="folder">/webytepay/</span>
 ├── <span class="folder">config/</span>
-│   └── <span class="file">webytepay.php</span>
+│   └── <span class="file">webytepay.php</span>             <span class="comment"># Configuração do pacote</span>
 ├── <span class="folder">controllers/</span>
-│   └── <span class="file">WebytePayController.php</span>
+│   └── <span class="file">WebytePayController.php</span>    <span class="comment"># Controlador principal do WebytePay</span>
 ├── <span class="folder">lang/</span>
-│   └── <span class="folder">pt/</span>
+│   └── <span class="folder">pt/</span>                        <span class="comment"># Arquivos de tradução</span>
 │       ├── <span class="file">messages.php</span>
 │       ├── <span class="file">mail.php</span>
 │       └── <span class="file">sms.php</span>
@@ -53,14 +54,15 @@
 │   ├── <span class="file">2024_10_15_000000_create_transactions_table.php</span>
 │   └── <span class="file">2024_10_15_000001_add_payment_info_to_products_table.php</span>
 ├── <span class="folder">routes/</span>
-│   └── <span class="file">web.php</span>
+│   └── <span class="file">web.php</span>                    <span class="comment"># Rotas do WebytePay</span>
 ├── <span class="folder">views/</span>
-│   └── <span class="file">payment-form.blade.php</span>
-├── <span class="file">WebytePayServiceProvider.php</span>
-├── <span class="file">composer.json</span>
+│   └── <span class="file">payment-form.blade.php</span>     <span class="comment"># Formulário de pagamento</span>
+├── <span class="file">WebytePayServiceProvider.php</span>    <span class="comment"># Provedor de Serviço</span>
+├── <span class="file">composer.json</span>                   <span class="comment"># Arquivo Composer</span>
 ├── <span class="file">composer.lock</span>
-└── <span class="file">install.php</span>
-</code>
-    </div>
+└── <span class="file">install.php</span>                     <span class="comment"># Script de instalação opcional</span>
+</pre>
+</div>
+
 </body>
 </html>
