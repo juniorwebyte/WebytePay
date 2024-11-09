@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log de Alterações - WebytePay</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #0056b3;
+        }
+        .changelog {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .version {
+            color: #d9534f;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        .update-type {
+            color: #5bc0de;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Log de Alterações - WebytePay</h1>
+    <div class="changelog">
+        <div class="version">Versão 2.3.0 - 2024-11-01</div>
+        <div class="update-type">Melhorias:</div>
+        <ul>
+            <li>Otimização do carregamento do gateway de pagamento para reduzir o tempo de resposta.</li>
+            <li>Refatoração do código para facilitar futuras integrações com outros métodos de pagamento.</li>
+            <li>Melhoria na interface de usuário do formulário de pagamento para aumentar a clareza e acessibilidade.</li>
+        </ul>
+        <div class="update-type">Correções de Bugs:</div>
+        <ul>
+            <li>Correção de erro que impedia a atualização automática de status após o pagamento.</li>
+            <li>Correção de incompatibilidade com PHP 8.1.</li>
+            <li>Correção de problema na exibição de mensagens de erro ao tentar realizar pagamentos com dados incompletos.</li>
+        </ul>
+
+        <div class="version">Versão 2.2.1 - 2024-10-15</div>
+        <div class="update-type">Melhorias:</div>
+        <ul>
+            <li>Aprimoramento de segurança na comunicação entre WebytePay e Vendi Aqui, utilizando criptografia adicional.</li>
+            <li>Adicionada opção para habilitar/desabilitar notificações via SMS no painel de administração.</li>
+        </ul>
+        <div class="update-type">Correções de Bugs:</div>
+        <ul>
+            <li>Correção de problema no envio de notificações por e-mail após o pagamento.</li>
+            <li>Resolução de erro de timezone em logs de transações.</li>
+        </ul>
+
+        <div class="version">Versão 2.2.0 - 2024-10-01</div>
+        <div class="update-type">Melhorias:</div>
+        <ul>
+            <li>Adição de suporte para múltiplos idiomas na interface do usuário.</li>
+            <li>Atualização das dependências do projeto para melhorar compatibilidade e segurança.</li>
+        </ul>
+    </div>
+</body>
+</html>
