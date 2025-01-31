@@ -1,0 +1,37 @@
+# Ignorar arquivos de configuração do sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos de configuração de IDEs
+.vscode/
+.idea/
+
+# Ignorar diretórios de dependências
+/node_modules/
+vendor/
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos temporários do sistema
+*.swp
+*.bak
+*.tmp
+
+# Ignorar arquivos de ambiente
+.env
+.env.local
+.env.*.local
+
+# Ignorar diretórios de build
+/build/
+dist/
+
+# Ignorar arquivos de cache do Composer (se aplicável)
+composer.lock
+
+# Ignorar arquivos de cache de linguagens específicas
+*.cache
+
+# Ignorar diretórios de plugins específicos (se necessário)
+extras/plugins/webytepay/lang/
