@@ -4,7 +4,7 @@ WebytePay é um gateway de pagamento desenvolvido para facilitar transações no
 
 ## 🚀 Funcionalidades
 
-- **Suporte a múltiplos métodos de pagamento**: Inclui PIX, Boleto Bancário, Débito e Crédito.
+- **Suporte a múltiplos métodos de pagamento**: Inclui PIX, Boleto Bancário, Débito, Crédito e Criptomoedas.
 - **Fácil integração**: Instale facilmente através do painel de controle do Vendi Aqui.
 - **Interface amigável**: Experiência de pagamento simplificada para usuários finais.
 - **Segurança**: Implementação de boas práticas de segurança para proteger as transações.
